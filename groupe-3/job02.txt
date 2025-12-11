@@ -1,0 +1,4 @@
+find /app/repo -name "*.md"
+find /app -mmin -120
+find /app/repo -name "*.txt" -exec ls -lh {} \; | sort -k5 -h
+find tmp/ -name "*old*" -exec rm -i {} \;
