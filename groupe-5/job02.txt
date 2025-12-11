@@ -1,0 +1,4 @@
+groups
+adduser student_lptf
+deluser --remove-home student_lptf
+which tig
