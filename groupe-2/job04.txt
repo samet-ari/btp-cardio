@@ -1,0 +1,7 @@
+grep "POST" logs.txt | grep "192.168.0.2"
+grep -v " [345]" logs.txt
+cut -d '"' -f 3 logs.txt | cut -d ' ' -f 2
+sort -t '.' -k 4 -n logs.txt
+cut -d ' ' -f 1 logs.txt | sort -u
+sed 's/200/OK_YOLO/g' logs.txt
+cut -d ' ' -f 1 logs.txt | sort | uniq -c
