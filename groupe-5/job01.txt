@@ -1,0 +1,4 @@
+df -h
+du -sh /app/repo
+free -h
+hexdump -n 64 /usr/bin/tig
