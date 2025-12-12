@@ -1,0 +1,5 @@
+sed 's/WARN/ATTENTION_ÇA_PIQUE!/g' data.txt
+awk '{print $1, $4}' data.txt
+awk '{$1=$1}1' OFS=";" data.txt
+sed '/^$/d' data.txt
+grep -n "2025-12-065" data.txt
